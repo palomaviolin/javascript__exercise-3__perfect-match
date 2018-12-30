@@ -1,18 +1,53 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
     
     <head>
         <meta charset="UTF-8">
-        <title>Adalab Web Starter Kit</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Pairs Card Game</title>
         <link rel="icon" href="favicon.png" />
         <link rel="stylesheet" href="assets/css/main.css">
     </head>
     
     <body>
-        <div class="page">
-            <header class="page__header">Header</header>
-            <main class="page__main">Main</main>
-        </div>
+        <header>
+            <!-- <h1>Pokémon MatchMatch</h1>   -->
+            <img src="assets/images/title-blue.gif" alt="">
+            <!-- <audio controls>
+      <source src="pokemon-theme.mp3" type="audio/mpeg">
+    </audio>
+    -->
+        </header>
+        <main>
+            <section class="section-1" id="select-options">
+                <img class="gif-1" src="assets/images/pokemon-gif-1.gif" alt="" width="40%"
+                height="40%">
+                <div>
+                    <p>Are you capable to find all pokemon pairs? Choose the difficulty with
+                        4, 6 or 8 cards and start the game!</p>
+                    <div class="options">
+                        <div class="option">
+                            <label for="method-1">
+                                <input id="method-1" type="radio" value="4" name="playmethods">4</label>
+                        </div>
+                        <div class="option">
+                            <label for="method-2">
+                                <input id="method-2" type="radio" value="6" name="playmethods">6</label>
+                        </div>
+                        <div class="option">
+                            <label for="method-3">
+                                <input id="method-3" type="radio" value="8" name="playmethods">8</label>
+                        </div>
+                        <button type="" id="start-game-button" class="start-game-button">PLAY</button>
+                    </div>
+                </div>
+            </section>
+            <section class="section-2">
+                <ul class="cards-list" id="cards-list"></ul>
+            </section>
+        </main>
+        <script type="text/javascript" src="assets/js/main.js"></script>
     </body>
 
 </html>
