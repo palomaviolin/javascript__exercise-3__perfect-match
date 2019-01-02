@@ -4,6 +4,15 @@ const NUMBER_OF_CARDS_KEY = 'number_of_cards';
 const FAVORITES_KEY = 'favorites';
 let showResultsContainer = document.body.querySelector('#cards-list');
 let startGameButton = document.body.querySelector('#start-game-button');
+let counterElem = document.body.querySelector('#counter');
+let counter = 0;
+
+function counterIncrement() {
+  if (counter <= 4){
+    counter += 1;
+    counterElem.innerText = counter;  
+  }
+}
 
 function setNumberOfCards(selectedOption) {
   localStorage.setItem(NUMBER_OF_CARDS_KEY, selectedOption);
@@ -67,6 +76,7 @@ function viewPokemonCards() {
 
       for (const pokemonData of response) {
         let pokemonImage = pokemonData.image;
+        let pokemonPair = pokemonData.pair;
 
         let showResultItem = document.createElement('li');
         showResultItem.className = 'show-result-item';
@@ -81,7 +91,13 @@ function viewPokemonCards() {
         showImageElem.src = pokemonImage;
         showResultItem.appendChild(showImageElem);
 
+        let pokemonPairElem = document.createElement('p');
+        let pokemonPairText = document.createTextNode(pokemonPair);
+        pokemonPairElem.appendChild(pokemonPairText);
+        showResultItem.appendChild(pokemonPairElem);
+
         showResultItem.addEventListener('click', toggleFavorite);
+        showResultItem.addEventListener('click', counterIncrement);
 
         showResultsContainer.appendChild(showResultItem);
       }
