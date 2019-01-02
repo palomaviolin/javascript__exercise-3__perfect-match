@@ -15,9 +15,7 @@ function getNumberOfCards() {
 function viewPokemonCards() {
   let query = document.querySelector('input[name="playmethods"]:checked').value;
   setNumberOfCards(query);
-  fetch(
-    `https://raw.githubusercontent.com/Adalab/cards-data/master/${query}.json`
-  )
+  fetch(`https://raw.githubusercontent.com/Adalab/cards-data/master/${query}.json`)
     .then(response => response.json())
     .then(response => {
       showResultsContainer.innerHTML = '';
