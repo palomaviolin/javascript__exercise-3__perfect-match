@@ -1,8 +1,6 @@
-# Ejercicio BIS de evaluación final ‒ Sprint 2 ([Adalab](https://adalab.es/))
+# JavaScript - Ejercicio 3
 
-Este repositorio contiene el bis de mi ejercicio ([@palomaviolin](https://github.com/palomaviolin)) de evaluación final del Sprint 2 de Adalab.
-
-[AQUÍ](http://beta.adalab.es/e-s2-evaluacion-final-bis-palomaviolin/) podéis encontrar el link directo a la website resultante, y a continuación pondré en detalle las instrucciones que nos dieron para realizar dicho ejercicio. Finalmente añadiré una guía para usar este repo el cual contiene un web-starter-kit en node/gulp.
+[AQUÍ](https://palomaviolin.github.io/javascript__exercise-3__perfect-match/) podéis encontrar el link directo a la website resultante, y a continuación pondré en detalle las instrucciones que nos dieron para realizar dicho ejercicio. Finalmente añadiré una guía para usar este repo el cual contiene un web-starter-kit en node/gulp.
 
 
 # Instrucciones dadas para realizar el ejercicio:
