@@ -22,11 +22,11 @@ La aplicación consta de dos partes:
 2. Un listado de cartas, cada una con 2 imágenes que representan las dos caras de una carta ﴾cuando una está visible la otra está oculta﴿.
 
 La imagen para la cara anterior la obtendremos de un servidor y para la posterior usaremos
-https://via.placeholder.com/160x195/30d9c4/ffffff/?text=ADALAB.
+https://i.ebayimg.com/images/g/2EEAAMXQfFJRU08w/s-l300.jpg.
 
 En la imagen del el diseño propuesto podemos ver algunas cartas boca arriba y otras boca abajo.
 
-Para realizar la maquetación básica del ejercicio usaremos Sass y la base de gulp del [Adalab Web Starter Kit](https://github.com/Adalab/Adalab-web-starter-kit).
+Para realizar la maquetación básica del ejercicio usaremos Sass y la base de gulp de este [Web Starter Kit](https://github.com/Adalab/Adalab-web-starter-kit).
 
 ## 2. Inicio de la partida
 
